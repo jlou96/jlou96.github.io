@@ -1,5 +1,41 @@
 body {
   color: #dedede;
-  background-color: #1b1b1b;
-  font-family: "Helvetia Neue";
+  background-color: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  font-size: large;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 13%;
+  margin-left: 2%;
+  padding: 0;
+  justify-content: center;
+  height: 60%;
+  width: 3%;
+  border-radius: 25px;
+  position: fixed;
+}
+
+li a {
+  display: flex;
+  color: #dedede;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  justify-content: center;
+  text-decoration: none;
+}
+
+img {
+  width: 70%;
+  height: auto;
 }

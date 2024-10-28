@@ -1,0 +1,84 @@
+:root {
+    --homepage-bg: #282828;
+    --homepage-fg: #d5c4a1;
+    --homepage-secondary-fg: #a89984;
+    --homepage-search-bg: #2b2b2bde;
+    --homepage-scrollbar-color: #3f3f3f;
+    --homepage-text-font-family: 'Cascadia Code', monospace;
+    --homepage-clock-font-family: 'Cascadia Code', monospace;
+}
+
+body {
+    background-color: var(--homepage-bg);
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#clock {
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: var(--homepage-clock-font-family);
+    color: var(--homepage-fg);
+    margin-top: -16%;
+}
+
+#search {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--homepage-search-bg);
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#search-field {
+    width: 90%;
+    padding: 0.75em 1em;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ffffff00;
+    font-family: var(--homepage-text-font-family);
+    font-size: 2rem;
+    color: var(--homepage-fg);
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.weather-container {
+    width: 30%;
+    padding: 1em;
+    border-radius: 3px;
+    font-family: var(--homepage-text-font-family);
+    font-size: 16pt;
+    font-weight: 500;
+    color: var(--homepage-fg);
+    text-align: center;
+}
+
+.inline {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        height: auto;
+    }
+
+    #clock {
+        margin-top: 1em;
+    }
+}
